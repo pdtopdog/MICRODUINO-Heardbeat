@@ -53,7 +53,6 @@ unsigned long time,heart_time;
 unsigned long lastBeatTime = 0; 
 int heartbeat = 0;
 boolean condition = false;
-boolean sta=false;
 
 void isr(){ 
   heart_time = time; 
