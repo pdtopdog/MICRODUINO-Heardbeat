@@ -59,7 +59,7 @@ void isr(){
   heart_time = time; 
   int deburring = heart_time - lastBeatTime; 
       //Serial.println(deburring);
-       if((deburring>400)&&(deburring<1000)){  //60-120
+       if((deburring>400)&&(deburring<1000)){  
        heartbeat = heartbeat+1;       
        }
        lastBeatTime = heart_time;        
