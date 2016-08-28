@@ -58,8 +58,8 @@ boolean sta=false;
 void isr(){ 
   heart_time = time; 
   int deburring = heart_time - lastBeatTime; 
-      Serial.println(deburring);
-       if((deburring<1000)&&(deburring>500)){  //60-120
+      //Serial.println(deburring);
+       if((deburring>500)&&(deburring<1000)){  //60-120
        heartbeat = heartbeat+1;       
        }
        lastBeatTime = heart_time;        
