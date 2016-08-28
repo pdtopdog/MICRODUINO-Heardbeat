@@ -125,7 +125,7 @@ void loop( ){
      int avg = vol/10;
      int heartbeat = 60000/avg;        
    
-   if(heartbeat>60 && heartbeat<120){
+   if(heartbeat>60 && heartbeat<150){
        u8g.firstPage();            
    do {                
     u8g.drawXBMP( 0, 0, 20, 20, ning); 
